@@ -239,9 +239,9 @@
         <div class="src">BCG, via Manufacturing Dive</div>
       </div>
       <div class="hStat">
-        <div class="n" data-target="24" data-suffix="%">0%</div>
-        <div class="l">retention lift when technical and soft skills are taught in blended programs.</div>
-        <div class="src">LinkedIn Workplace Learning Report</div>
+        <div class="n" data-target="250" data-suffix="%">0%</div>
+        <div class="l">return on a soft-skills training investment in a manufacturing field experiment, about nine months on.</div>
+        <div class="src">Adhvaryu, Kala &amp; Nyshadham · NBER (RCT), 2018</div>
       </div>
       <div class="hStat">
         <div class="n" data-target="598" data-suffix="">0</div>
@@ -360,7 +360,7 @@
     <div class="sources" id="sources"></div>
     <div class="note">
       <b>On sourcing</b>
-      The peer-reviewed and institutional items are the citable backbone. The industry pieces (Unboxed, BizLibrary, Manufacturing Dive) are valuable for practical framing, but several of their headline figures originate from LinkedIn, Deloitte, and BCG reports — follow those to the primary source before quoting them in a business case.
+      The peer-reviewed and institutional items are the citable backbone, and the headline figures now trace to their primary sources — BCG for the upskilling gap, an NBER field experiment for the returns to soft-skill training, and PwC for simulation. The industry pieces (Unboxed, BizLibrary, Manufacturing Dive) remain useful for practical framing rather than as statistical authorities — verify any third-party figure they relay at origin before quoting it.
     </div>
   </div>
 </section>
@@ -447,8 +447,8 @@ const scenarios = [
 ];
 
 const plays = [
-  {pn:"P-01",h:"Blended programs",p:"Interleave soft-skill practice with the technical content in one program — e.g. pair systems training with a problem-solving workshop — so both are rehearsed together.",m:"+24% retention · LinkedIn WLR"},
-  {pn:"P-02",h:"Simulation before live",p:"Let new operators make mistakes on a dynamic process model before touching live controls — building both competence and the confidence to communicate under pressure.",m:"14→9 wks to solo · imubit case"},
+  {pn:"P-01",h:"Blended programs",p:"Interleave soft-skill practice with the technical content in one program — e.g. pair systems training with a problem-solving workshop — so both are rehearsed together.",m:"~250% ROI · NBER field RCT"},
+  {pn:"P-02",h:"Simulation before live",p:"Let new operators make mistakes on a dynamic process model before touching live controls — building both competence and the confidence to communicate under pressure.",m:"4× faster, +275% confidence · PwC (2020)"},
   {pn:"P-03",h:"Realistic role-play",p:"Scenario role-plays that force a technical task and a human one at once — troubleshoot the issue while keeping a colleague or customer calm and informed.",m:"Unboxed · Industry 4.0"},
   {pn:"P-04",h:"Reflection activities",p:"Short structured reflection — how did I communicate, adapt, handle stress? — turns one-off behaviour into durable habit and surfaces coaching moments.",m:"Unboxed · habit formation"},
   {pn:"P-05",h:"Mentorship & coaching",p:"Pair less-experienced staff with seasoned mentors for real-world context. Hands-on guidance accelerates the interpersonal side technical courses skip.",m:"BizLibrary · accelerated transfer"},
@@ -457,8 +457,8 @@ const plays = [
 
 const takeaways = [
   {h:"Co-deliver every rollout",p:"Pair the technical module with a supervisor-led session on what actually changes for the worker.",ev:"Purdue Global"},
-  {h:"Blend, don't bolt on",p:"Weave soft-skill practice into the technical curriculum instead of running a separate, forgettable course.",ev:"LinkedIn WLR · +24% retention"},
-  {h:"Simulate before live",p:"Give operators a safe environment to make and recover from mistakes before they touch live controls.",ev:"imubit · Manufacturing Dive"},
+  {h:"Blend, don't bolt on",p:"Weave soft-skill practice into the technical curriculum instead of running a separate, forgettable course.",ev:"NBER RCT · ~250% return"},
+  {h:"Simulate before live",p:"Give operators a safe environment to make and recover from mistakes before they touch live controls.",ev:"PwC · VR training study (2020)"},
   {h:"Close the frontline gap",p:"Target frontline staff for upskilling, not just leaders and engineers — that's where the deficit sits.",ev:"BCG · 14% vs 44%"},
   {h:"Reframe the narrative",p:"Position new technology as augmentation and name the job-security fear directly, early.",ev:"BCG · ~1 in 3 fear elimination"},
   {h:"Build verify-the-output habits",p:"Add critical-thinking drills where the dashboard or AI is plausibly — but provably — wrong.",ev:"Purdue Global"},
@@ -469,9 +469,10 @@ const takeaways = [
 const sources = [
   {tier:"peer",t:"Technology Acceptance & Work Engagement in Industry 4.0",d:"Cross-sectional survey of 598 white- and blue-collar workers: resilience and information/training opportunities were associated with technology acceptance, which in turn correlated with work engagement. Establishes association, not causation.",o:"Molino, Cortese & Ghislieri, 2020 · IJERPH (MDPI)",u:"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7178190/"},
   {tier:"peer",t:"Industry 4.0, State Incentives & Firms' Skills Needs",d:"Empirical study of Italian manufacturing arguing technical, social and strategic capabilities must be strengthened simultaneously for effective I4.0 integration.",o:"R&D Management, Wiley (2026)",u:"https://onlinelibrary.wiley.com/doi/10.1111/radm.70009"},
-  {tier:"peer",t:"Developing Soft Skills via Educational Testbed 4.0",d:"Evaluates a teaching methodology that measurably developed teamwork, communication and creativity in an Industry 4.0 training program.",o:"Springer (2021)",u:"https://link.springer.com/10.1007/978-3-030-91885-9_51"},
+  {tier:"peer",t:"Evaluation of Soft Skills Through Educational Testbed 4.0",d:"Evaluates a teaching methodology that measurably developed teamwork, communication and creativity in an Industry 4.0 training program.",o:"Springer (2021)",u:"https://link.springer.com/chapter/10.1007/978-3-030-91885-9_51"},
+  {tier:"peer",t:"The Skills to Pay the Bills: Returns to On-the-Job Soft Skills Training",d:"Randomized controlled trial of a workplace soft-skills program across five factories (~2,700 workers): the firm's net return on the training investment was roughly 250% within about nine months. The page's only causal evidence that soft-skills training pays off in a manufacturing setting. (NBER working paper.)",o:"Adhvaryu, Kala & Nyshadham · NBER w24313 (2018)",u:"https://www.nber.org/papers/w24313"},
   {tier:"expert",t:"The Value of Soft Skills in Modern Manufacturing",d:"Faculty interviews framing six soft skills as leadership requirements for technology adoption — the basis of this dossier's skills section.",o:"Purdue Global (2026)",u:"https://www.purdueglobal.edu/blog/business/soft-skills-manufacturing-industry-4-0/"},
-  {tier:"expert",t:"Manufacturing Workforce Development for Industry 4.0",d:"Field framework with the simulation case where time-to-solo-operation dropped from fourteen to nine weeks via AI-enabled practice.",o:"imubit (2026)",u:"https://imubit.com/article/manufacturing-workforce-development/"},
+  {tier:"expert",t:"The Effectiveness of Virtual Reality Soft Skills Training in the Enterprise",d:"Controlled study of new managers across 12 US sites: simulation-based (VR) learners completed training up to 4× faster than classroom and were up to 275% more confident to act on what they learned, versus classroom and e-learning groups.",o:"PwC (2020)",u:"https://www.pwc.com/us/en/tech-effect/emerging-tech/virtual-reality-study.html"},
   {tier:"industry",t:"Integrating Soft Skills in Technical Training",d:"Practical patterns for blending: blended programs, realistic role-play/simulation, and reflection activities. Relays LinkedIn & Deloitte figures.",o:"Unboxed Technology (2024)",u:"https://unboxedtechnology.com/blog/integrating-soft-skills-in-technical-training/"},
   {tier:"industry",t:"Reskilling Factory Workers for AI Adoption",d:"Documents the frontline upskilling gap (14% vs 44%) and the role of training in easing replacement anxiety. Cites a BCG study.",o:"Manufacturing Dive (2024)",u:"https://www.manufacturingdive.com/news/ai-adoption-how-manufacturers-are-reskilling-factory-workers/713523/"},
   {tier:"industry",t:"Soft Skills vs. Hard Skills",d:"Delivery-format guidance: microlearning, scenario-based training, role-play and mentorship for combining the two skill sets.",o:"BizLibrary (2025)",u:"https://www.bizlibrary.com/blog/employee-development/soft-skills-vs-hard-skills-building-a-workforce-that-stays-ahead-of-the-competition/"}
